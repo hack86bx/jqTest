@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <p>ce para est a l interieur d un div</p>
+    </div>
+    <button id="btnParent">selectionner parent</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#btnParent").click(function(){
+                $("p").parent().css("border", "2px solid red")
+            });
+        });
+
+    </script>
+
+</body>
+</html>
